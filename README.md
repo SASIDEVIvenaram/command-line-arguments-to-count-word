@@ -30,17 +30,18 @@ RegisterNumber: 22008940
 ```
 ```
 import sys
-count=0
-with open(sys.argv[1],'r') as f:
-    for line in f:
-        word = line.split()
-        count+= len(word)
-print("Word Count in File = ",count)  
+f1=open(sys.argv[1])
+data=f1.read()
+word=data.split()
+print("The word count is",len(word))
+f1.close() 
 ```
 
 ### OUTPUT:
-![](/output%20(1).png)
-![](/file.png)
+![](1.png)
+
+
+![](2.png)
 
 ## RESULT:
 Thus the program is written to find the word count from the contents of a file using command line arguments.
